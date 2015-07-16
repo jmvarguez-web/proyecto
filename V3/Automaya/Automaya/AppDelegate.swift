@@ -20,7 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Set your own API key below.
         // Set your own API key below.
-        GMSServices.provideAPIKey("AIzaSyCvGm_gnWVKHFkToOMSAngx_08sqHkuAnA")
+        
+        GMSServices.provideAPIKey("AIzaSyCTthGfcLg1in84VlBjXcbK6ZMiJv_iuIU")
+       
         
         return true
     }

@@ -14,11 +14,11 @@
 		<string>https://github.com/jmvarguez-web/proyecto.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Automaya/Automaya.xcodeproj</string>
+	<string>V3/Automaya/Automaya.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>DF43921577E376839F6495E49B406F48451B5F40</key>
-		<string>../../..</string>
+		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/jmvarguez-web/proyecto.git</string>
