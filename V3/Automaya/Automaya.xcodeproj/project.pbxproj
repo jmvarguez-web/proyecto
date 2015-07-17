@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1AB208811B597D19007504F9 /* CotizaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB208801B597D19007504F9 /* CotizaViewController.swift */; };
 		FD0223301B4CFC1200CAFB33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD02232F1B4CFC1200CAFB33 /* AppDelegate.swift */; };
 		FD0223331B4CFC1200CAFB33 /* Automaya.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD0223311B4CFC1200CAFB33 /* Automaya.xcdatamodeld */; };
 		FD0223351B4CFC1200CAFB33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0223341B4CFC1200CAFB33 /* ViewController.swift */; };
@@ -52,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1AB208801B597D19007504F9 /* CotizaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CotizaViewController.swift; sourceTree = "<group>"; };
 		FD02232A1B4CFC1200CAFB33 /* Automaya.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Automaya.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD02232E1B4CFC1200CAFB33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD02232F1B4CFC1200CAFB33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +127,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1AB2087F1B597A8B007504F9 /* operacion */ = {
+			isa = PBXGroup;
+			children = (
+				1AB208801B597D19007504F9 /* CotizaViewController.swift */,
+			);
+			name = operacion;
+			sourceTree = "<group>";
+		};
 		FD0223211B4CFC1200CAFB33 = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +212,7 @@
 		FD0223521B4CFC1F00CAFB33 /* SWRevealViewController */ = {
 			isa = PBXGroup;
 			children = (
+				1AB2087F1B597A8B007504F9 /* operacion */,
 				FDF65E3B1B54C70200303200 /* Google Maps SDK */,
 				FDF65E381B54B18300303200 /* agencias */,
 				FD58DBE61B4F7C9A00709910 /* feed_comentarios */,
@@ -350,6 +361,7 @@
 				FD58DBEE1B50DD9E00709910 /* XmlParserManager.swift in Sources */,
 				FD58DBE81B4F7CF800709910 /* FeedTableViewController.swift in Sources */,
 				FD02235C1B4D124700CAFB33 /* ComentTableViewController.swift in Sources */,
+				1AB208811B597D19007504F9 /* CotizaViewController.swift in Sources */,
 				FD0223301B4CFC1200CAFB33 /* AppDelegate.swift in Sources */,
 				FD0DD7A61B563ABA005F7B23 /* MapTasks.swift in Sources */,
 				FD0223561B4CFC5E00CAFB33 /* SWRevealViewController.m in Sources */,

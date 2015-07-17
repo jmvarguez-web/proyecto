@@ -41,7 +41,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hFO-PU-WDD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="846" y="886"/>
+            <point key="canvasLocation" x="852" y="886"/>
         </scene>
         <!--Comentarios-->
         <scene sceneID="yTP-om-73b">
@@ -273,6 +273,9 @@
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="7np-ky-IRU" kind="show" id="vyM-iH-Jyl"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="yzo-Vb-BxF">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -346,7 +349,87 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tyl-xy-zEb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-95" y="870"/>
+            <point key="canvasLocation" x="-95" y="886"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cyQ-Jc-2wF">
+            <objects>
+                <navigationController id="7np-ky-IRU" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7Oh-Qi-ov5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="iGe-Q5-dxm" kind="relationship" relationship="rootViewController" id="lqK-HF-dzh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lVk-AT-Q0Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="852" y="2343"/>
+        </scene>
+        <!--Cotizar-->
+        <scene sceneID="eRb-sT-yQC">
+            <objects>
+                <viewController id="iGe-Q5-dxm" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nAq-y4-9vr"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zgu-An-YFb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iUA-YI-7lD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rdN-4a-n70">
+                                <rect key="frame" x="117" y="133" width="367" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hSH-Ve-foW">
+                                <rect key="frame" x="117" y="194" width="367" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wiY-Rd-30t">
+                                <rect key="frame" x="117" y="316" width="367" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zk8-ws-in3">
+                                <rect key="frame" x="197" y="385" width="212" height="30"/>
+                                <state key="normal" title="Registrar">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rax-nt-cxb">
+                                <rect key="frame" x="117" y="256" width="367" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wiY-Rd-30t" firstAttribute="centerX" secondItem="Zk8-ws-in3" secondAttribute="centerX" constant="-2.5" id="0EU-44-jS3"/>
+                            <constraint firstItem="rdN-4a-n70" firstAttribute="leading" secondItem="iUA-YI-7lD" secondAttribute="leadingMargin" constant="101" id="1cv-Pf-nuC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rdN-4a-n70" secondAttribute="trailing" constant="100" id="Hnq-9b-KdE"/>
+                            <constraint firstItem="Zk8-ws-in3" firstAttribute="leading" secondItem="iUA-YI-7lD" secondAttribute="leadingMargin" constant="181" id="ImR-K3-iQq"/>
+                            <constraint firstItem="rdN-4a-n70" firstAttribute="top" secondItem="nAq-y4-9vr" secondAttribute="bottom" constant="70" id="PiW-up-CEG"/>
+                            <constraint firstItem="wiY-Rd-30t" firstAttribute="width" secondItem="rax-nt-cxb" secondAttribute="width" id="QtZ-6v-LwO"/>
+                            <constraint firstItem="wiY-Rd-30t" firstAttribute="centerX" secondItem="rax-nt-cxb" secondAttribute="centerX" id="bhZ-WS-NI2"/>
+                            <constraint firstItem="rax-nt-cxb" firstAttribute="centerX" secondItem="hSH-Ve-foW" secondAttribute="centerX" id="ckQ-09-TF5"/>
+                            <constraint firstItem="rdN-4a-n70" firstAttribute="width" secondItem="hSH-Ve-foW" secondAttribute="width" id="hui-hE-Drn"/>
+                            <constraint firstItem="rdN-4a-n70" firstAttribute="centerX" secondItem="hSH-Ve-foW" secondAttribute="centerX" id="kUL-Qm-Ffe"/>
+                            <constraint firstItem="rax-nt-cxb" firstAttribute="width" secondItem="hSH-Ve-foW" secondAttribute="width" id="vBf-iS-0sB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Zk8-ws-in3" secondAttribute="trailing" constant="175" id="y1u-se-FuZ"/>
+                            <constraint firstItem="wiY-Rd-30t" firstAttribute="width" secondItem="Zk8-ws-in3" secondAttribute="width" id="zBB-uB-3T2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Cotizar" id="8kx-A9-dd7">
+                        <barButtonItem key="leftBarButtonItem" image="menu" id="H67-O5-0yz"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CS1-QZ-sOO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1676" y="2343"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yvb-yR-fB9">
@@ -362,7 +445,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2x8-o5-LFf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="352" y="1623"/>
+            <point key="canvasLocation" x="852" y="1629"/>
         </scene>
         <!--Agencias View Controller-->
         <scene sceneID="y2I-OV-H6B">
@@ -446,7 +529,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5aG-Sc-tkl" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1082" y="1623"/>
+            <point key="canvasLocation" x="1690" y="1629"/>
         </scene>
     </scenes>
     <resources>
@@ -464,6 +547,6 @@
         <image name="steering_wheel" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="dUd-Ub-3ry"/>
+        <segue reference="qmc-Hg-PdR"/>
     </inferredMetricsTieBreakers>
 </document>
